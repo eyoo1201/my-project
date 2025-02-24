@@ -1,0 +1,201 @@
+/* In hero.css or any global CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Hero Section */
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: #33595E;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-text-container {
+  text-align: left;
+  color: white;
+}
+
+.hero-image-container {
+  width: 50%;
+  height: 100%;
+}
+
+.hero-image {
+  width: 80%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'Poppins';
+  margin: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: 'Poppins';
+  font-weight: 200;
+}
+
+.hire-me-button {
+  background-color: #DDD7C5;
+  color: #373B41;
+  padding: 5px 20px;
+  border: beige 1px solid;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.hero-button-container {
+  padding-top: 100px;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10; /* Make sure it's above other elements */
+  transition: position 0.3s ease, top 0.3s ease;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 5px;
+}
+
+.navbar li {
+  font-size: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover {
+  color: #f5f5dc; /* Change color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+.navbar a.active {
+  text-decoration: underline;
+  color: #f1daa7; /* Active color (same as on hover) */
+}
+
+/* Sticky Navbar when scrolling */
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  right: 50px;
+  background: transparent;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 5px;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* About Section Styles */
+.about-section {
+  background-color: #373B41; /* Dark background for the About section */
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.about-text-container {
+  background-color: #33595E; /* Slightly lighter background for the text container */
+  padding: 40px;
+  border-radius: 5px;
+  width: 90%;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.about-text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Works Section Styles */
+.works-section {
+  background-color: #373B41;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  
+}
+
+.works-text-container {
+  background-color: #33595E;
+  padding: 40px;
+  border-radius: 5px;
+  width: 90%;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.works-text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.works-text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #373B41;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.contact-text-container {
+  background-color: #33595E;
+  padding: 40px;
+  border-radius: 5px;
+  width: 90%;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.contact-text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
