@@ -1,6 +1,7 @@
 /* In hero.css or any global CSS file */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+
 /* Hero Section */
 .hero-wrapper {
   display: flex;
@@ -41,6 +42,7 @@ h1 {
 h3 {
   font-family: 'Poppins';
   font-weight: 200;
+  color: white;
 }
 
 .hire-me-button {
@@ -118,30 +120,201 @@ html {
 
 /* About Section Styles */
 .about-section {
-  background-color: #373B41; /* Dark background for the About section */
-  padding: 50px 0;
+  background-color: #33595E;
+  padding: 40px 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+.h2-c{
   text-align: center;
+}
+.about-me {
+  font-size: 1.1rem;
+  font-family: 'Poppins';
   color: white;
+  line-height: 1.6;
+  margin-bottom: 100px;
+  text-align: center; /* Centers the text */
+  max-width: 700px; /* Limits the width so it doesn't stretch too much */
+  margin-left: auto; /* Centers the element horizontally */
+  margin-right: auto; /* Centers the element horizontally */
 }
 
-.about-text-container {
-  background-color: #33595E; /* Slightly lighter background for the text container */
-  padding: 40px;
-  border-radius: 5px;
-  width: 90%;
-  height: 560px;
-  margin: 0 auto;
-}
 
-.about-text-container h2 {
+h2 {
   font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-family: 'Poppins';
+}
+
+p {
+  font-size: 1.1rem;
+  color:white;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-family: 'Poppins';
+}
+li{
+  color: #f1daa7;
+}
+
+/*skills css*/
+/* Styles for the list layout */
+.skills-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+.skills-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+ 
+}
+
+.skills-right h3 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 30px;
+  padding-left: 220px;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.skills-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+ 
+}
+
+.skills-left h3 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 30px;
+  padding-left: 220px;
+  font-weight: bold;
+  font-family: 'Poppins';
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-item {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-item h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-family: 'Poppins';
+}
+
+.progress-bar-container {
+  width: 80%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #f1daa7;
+  border-radius: 8px;
+  position: relative;
+}
+
+.progress-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(22, 84, 85);
+  font-weight: bold;
+}
+
+/* Responsive Layout for smaller screens */
+@media (max-width: 768px) {
+  .skills-left, .skills-right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.personal-touch-container {
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  
+}
+
+.personal-touch-container h3 {
+  font-size: 2rem;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
-.about-text-container p {
-  font-size: 1.2rem;
+.personal-touch-container p {
+  font-size: 1.1rem;
+  color: #ffffff;
   line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 1000px;
 }
+
+.personal-interests {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.interest {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.interest h4 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.interest ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.interest ul li {
+  font-size: 1rem;
+  color: #777;
+}
+
+.interest p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
 
 /* Works Section Styles */
 .works-section {
