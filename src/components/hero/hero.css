@@ -1,4 +1,4 @@
-/* In hero.css or any global CSS file */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -347,6 +347,234 @@ li{
   font-size: 1.2rem;
   line-height: 1.6;
 }
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: #2D3F44;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #FFD700;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.project-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.project-box {
+  background-color: #2D3F44;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(33.333% - 13.33px); /* 3 cards in a row with gap */
+  box-sizing: border-box;
+}
+
+.box-text {
+  flex: 1;
+  text-align: left;
+}
+
+.box-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #FFD700;
+}
+
+.box-text p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.box-image {
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.box-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .project-box {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .box-image {
+    margin: 15px 0 0;
+  }
+
+  .box-image img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.project-box {
+  background-color: #2D3F44;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(33.333% - 13.33px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: #3C4F55; /* Slightly lighter on hover */
+}
+
+.project-box:hover .box-text h3 {
+  color: #FFDD57; /* Brighter gold on hover */
+}
+
+.project-box:hover .box-image img {
+  transform: scale(1.05);
+}
+
+.box-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+.certificates-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #33595E;
+  color: white;
+}
+
+.certificates-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+}
+
+.certificate-slide {
+  min-width: 220px;
+  max-width: 250px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background-color: #2D3F44;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.certificate-slide:hover {
+  transform: scale(1.05);
+}
+
+.certificate-slide img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Blog Section */
+.blog-section {
+  background-color: #373B41;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+  
+}
+
+.blog-text-container {
+  background-color: #33595E;
+  padding: 40px;
+  border-radius: 5px;
+  width: 90%;
+  height: 560px;
+  margin: 0 auto;
+}
+
+.blog-text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.-text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
 
 /* Contact Section Styles */
 .contact-section {
@@ -374,5 +602,80 @@ li{
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
+.card {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  padding-top: 10%;
+  padding-bottom: 5%;
+
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 
